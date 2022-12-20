@@ -37,7 +37,6 @@ const TicTacToe = () => {
 
 		const winner = theWinner(updatetable);
 
-
 		if(winner) {
 			if (winner === "X"){
 				let {XScore} = counter;
@@ -68,8 +67,6 @@ const TicTacToe = () => {
 					setgameover(true)
 					return table[a];
 				}
-
-				return null;
 			}
 		}
 
@@ -91,9 +88,6 @@ const TicTacToe = () => {
 			</div>
 			<div>
 				<Table table={table} onClick={gameover ? resetgame: boxClick} />
-			</div>
-			<div>
-			
 			</div>
 		</div>
 	);
