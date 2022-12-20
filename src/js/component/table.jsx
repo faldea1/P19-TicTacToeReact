@@ -5,7 +5,7 @@ const Table = ({table, onClick}) =>{
     return(
         <div className='tablespaces'>
             {table.map((value, index) => {
-                return <Box value={value} onClick={() => onClick(index)} />
+                return <Box value={value} onClick={() => value === null && onClick(index)} />
             } )}
         </div>
     );

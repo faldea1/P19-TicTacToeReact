@@ -1,15 +1,29 @@
 
 body{
-    background-color: blue;
+    background-color:darkblue;
     margin: 0;
 }
 
-.end{
-    color: red;
+
+h1{
+    color:firebrick;
+    font-size: 70px;
+    margin-bottom: 30px;
+    
 }
 
+
 .reset{
-    color: white;
+    margin-top: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: medium;
+    box-shadow: 0px 0px 3px 3px red;
+    margin-right: 10px;
+    margin-top: 30px;
+
 }
 
 .box{
@@ -30,6 +44,10 @@ body{
 }
 
 .box:hover{
+    box-shadow: 0px 0px 10px 5px red;
+}
+
+.reset:hover{
     box-shadow: 0px 0px 10px 5px red;
 }
 
@@ -57,3 +75,28 @@ body{
     place-items: center;
     justify-content: center;
 }
+
+.marker{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin: auto;
+}
+
+.x-score{
+    color:black;
+    border-bottom: 3px solid black;
+    border-radius: 0px 0px 2px 3px ;
+}
+
+.o-score{
+    color:grey;
+    border-bottom: 3px solid grey;
+    border-radius: 0px 0px 2px 3px ;
+    margin-left: 50px;
+}
+
+
