@@ -8,7 +8,7 @@ body{
 h1{
     color:firebrick;
     font-size: 70px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     
 }
 
@@ -22,7 +22,7 @@ h1{
     font-size: medium;
     box-shadow: 0px 0px 3px 3px red;
     margin-right: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
 
 }
 
@@ -74,6 +74,7 @@ h1{
     grid-template-columns: repeat(3, 7rem);
     place-items: center;
     justify-content: center;
+    padding-bottom: 10px;
 }
 
 .marker{
@@ -88,16 +89,27 @@ h1{
 
 .x-score{
     color:black;
-    border-bottom: 3px solid black;
+    border-bottom: 4px solid black;
     border-radius: 0px 0px 2px 3px ;
+    margin-right: 35px;
+    margin-top: 5px;
 }
 
 .o-score{
     color:grey;
-    border-bottom: 3px solid grey;
+    border-bottom: 4px solid grey;
     border-radius: 0px 0px 2px 3px ;
-    margin-left: 50px;
+    margin-left: 35px;
+    margin-top: 5px;
 }
+
+
+.inactive{
+    border-bottom: 5px solid transparent;
+    
+}
+
+
 
 .indication{
     color: white;
@@ -109,5 +121,12 @@ h1{
     font-size: xx-large;
     margin-top: 10px;
 }
+
+h2, h3{
+    color: white;
+    font-weight: bolder;
+}
+
+
 
 

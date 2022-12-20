@@ -6,7 +6,7 @@ import Table from './table.jsx';
 
 
 //MAIN COMPONENT
-const TicTacToe = () => {
+const TicTacToe = (props) => {
 
 	//8 posibilidades de ganar (3 horizonatales, 3 verticales, 2 diagonales)
 	const WINCHANCES = [
@@ -24,7 +24,8 @@ const TicTacToe = () => {
 	const [Xplayer, setXplayer] = useState(true);
 	const [counter, setcounter] = useState({XScore:0, OScore:0})
 	const [gameover, setgameover] = useState(false);
-
+	
+	
 
 	const boxClick = (boxIndex) => {
 		const updatetable = table.map((value, index) => {
@@ -34,6 +35,7 @@ const TicTacToe = () => {
 				return value;
 			}
 		})
+ 
 
 		const winner = theWinner(updatetable);
 
@@ -77,12 +79,13 @@ const TicTacToe = () => {
 			changetable(Array(9).fill(null))
 		}
 
-
+		
 
 	return (
 		<div className='container'>
 			<div className='menu'>
 				<h1>TIC TAC TOE</h1>
+				<h2>Match Scoreboard</h2>
 				<Report counter={counter} Xplayer={Xplayer} />
 				<ResetGame resetgame={resetgame} />
 			</div>
