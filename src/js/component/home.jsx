@@ -24,7 +24,7 @@ const TicTacToe = () => {
 	const [Xplayer, setXplayer] = useState(true);
 	const [counter, setcounter] = useState({XScore:0, OScore:0})
 	const [gameover, setgameover] = useState(false);
-	const [turn, setturn] = useState(Array(9).fill(''));
+
 
 	const boxClick = (boxIndex) => {
 		const updatetable = table.map((value, index) => {
@@ -36,6 +36,7 @@ const TicTacToe = () => {
 		})
 
 		const winner = theWinner(updatetable);
+
 
 		if(winner) {
 			if (winner === "X"){
@@ -67,6 +68,8 @@ const TicTacToe = () => {
 					setgameover(true)
 					return table[a];
 				}
+
+				return null;
 			}
 		}
 
@@ -77,6 +80,8 @@ const TicTacToe = () => {
 			changetable(Array(9).fill(null))
 		}
 
+
+
 	return (
 		<div className='container'>
 			<div className='menu'>
@@ -86,6 +91,9 @@ const TicTacToe = () => {
 			</div>
 			<div>
 				<Table table={table} onClick={gameover ? resetgame: boxClick} />
+			</div>
+			<div>
+			
 			</div>
 		</div>
 	);

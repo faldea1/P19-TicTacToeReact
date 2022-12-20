@@ -99,4 +99,15 @@ h1{
     margin-left: 50px;
 }
 
+.indication{
+    color: white;
+    font-weight: bolder;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    font-size: xx-large;
+    margin-top: 10px;
+}
+
 
