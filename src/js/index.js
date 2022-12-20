@@ -12,6 +12,3 @@ import TicTacToe from "./component/home.jsx";
 ReactDOM.render(<TicTacToe />, document.querySelector("#app"));
 
 
-function startGame(){
-console.log('start game')
-}
