@@ -106,8 +106,9 @@ h1{
 
 .inactive{
     border-bottom: 5px solid transparent;
-    
+    text-rendering: asa;
 }
+
 
 
 

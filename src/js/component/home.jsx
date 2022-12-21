@@ -5,6 +5,7 @@ import ResetGame from './resetgame.jsx';
 import Table from './table.jsx';
 
 
+
 //MAIN COMPONENT
 const TicTacToe = (props) => {
 
